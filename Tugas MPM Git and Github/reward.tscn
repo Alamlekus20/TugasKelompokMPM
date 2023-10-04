@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf3vy78dhcrcr"]
+
+[ext_resource type="Texture2D" uid="uid://xjn1keginvb3" path="res://world/kado.png" id="1_luha5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ilxsw"]
+radius = 5.0
+height = 14.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_luha5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ilxsw")
