@@ -25,3 +25,29 @@ Alek: Menggunakan terminologi seperti commit, branch, merge, dan pull request un
 		- Gamau ah!
 
 => END
+
+~ Farel
+
+Farel: Selamat Datang di sesi Quiz Git dan GitHub!
+Farel: Anda tentu sudah belajar sekilas mengenai Git dan Github
+Farel: Siapakah nama salah satu pendiri Github?
+- Scott Chacon
+		set answer_status = "true"
+		Farel: Wow anda benar" memperhatikan materi yang ada
+- Alexander Graham Bell
+		Farel: Maaf jawaban anda kurang tepat :(
+- Bernardinus Alam Ageng Samodro
+		Farel: Hmmm masih salah :D
+
+=> END
+
+~ reward
+
+Final Reward: The Mightiest Prize comes only for those who's worthy!
+Player: am I worthy?
+if answer_status == "true":
+	Final Reward: You have achieved gelar "SEPUH"
+else:
+	Final Reward: Nah little man, you should try harder
+	
+=> END

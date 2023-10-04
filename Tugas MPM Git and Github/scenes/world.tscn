@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b1au01m7lrbfp"]
+[gd_scene load_steps=15 format=3 uid="uid://b1au01m7lrbfp"]
 
 [ext_resource type="Texture2D" uid="uid://bxngxqv2vonco" path="res://world/tiles.png" id="1_gv7bj"]
 [ext_resource type="PackedScene" uid="uid://c4373iviuy8gy" path="res://helpers/camera.tscn" id="1_wd0fv"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bnl1bl0a2235p" path="res://characters/nathan/nathan.tscn" id="6_ilwpu"]
 [ext_resource type="Resource" uid="uid://dcmhpf0kjwuwk" path="res://dialogue/main.dialogue" id="7_lbg0v"]
 [ext_resource type="PackedScene" uid="uid://bp5hs6b3rs6lo" path="res://characters/nathan/alek.tscn" id="8_0pwvo"]
+[ext_resource type="PackedScene" uid="uid://dj6nyu7yrr1mo" path="res://farel.tscn" id="9_c1i03"]
+[ext_resource type="PackedScene" uid="uid://bf3vy78dhcrcr" path="res://reward.tscn" id="10_5g275"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4af00"]
 texture = ExtResource("1_gv7bj")
@@ -78,5 +80,27 @@ dialogue_resource = ExtResource("7_lbg0v")
 dialogue_start = "alek"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Alek/Actionable"]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_nbk8d")
+
+[node name="farel" parent="." instance=ExtResource("9_c1i03")]
+position = Vector2(704, 54)
+
+[node name="Actionable" parent="farel" instance=ExtResource("6_2eijo")]
+dialogue_resource = ExtResource("7_lbg0v")
+dialogue_start = "Farel"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="farel/Actionable"]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_nbk8d")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("10_5g275")]
+position = Vector2(704, 110)
+
+[node name="Actionable" parent="StaticBody2D" instance=ExtResource("6_2eijo")]
+dialogue_resource = ExtResource("7_lbg0v")
+dialogue_start = "reward"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Actionable"]
 position = Vector2(0, 4)
 shape = SubResource("CircleShape2D_nbk8d")

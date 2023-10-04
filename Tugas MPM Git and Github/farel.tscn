@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj6nyu7yrr1mo"]
+
+[ext_resource type="Texture2D" uid="uid://bbh7n3u6fhy4r" path="res://characters/nathan/farel.png" id="1_rk5hq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_becg4"]
+radius = 5.0
+height = 14.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_rk5hq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_becg4")
