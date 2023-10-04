@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp5hs6b3rs6lo"]
+
+[ext_resource type="Texture2D" uid="uid://df3tkf2v1tu4w" path="res://characters/nathan/alek.png" id="1_m1rg7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i1jih"]
+radius = 5.0
+height = 14.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_m1rg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_i1jih")
