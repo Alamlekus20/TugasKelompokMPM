@@ -1,8 +1,8 @@
 # TugasKelompokMPM
-Pengembangan Game Menggunakan Mesin Game Godot
+/nPengembangan Game Menggunakan Mesin Game Godot
 
 Di buat Oleh:
 
-Alam Ageng Sampurno	          21060120120007
-Benardinus Eden Bayu Samurdo	21060120140160
-Taffarel Wicaksana	
+/nAlam Ageng Sampurno	          21060120120007
+/nBenardinus Eden Bayu Samurdo	21060120140160
+/nTaffarel Wicaksana	
