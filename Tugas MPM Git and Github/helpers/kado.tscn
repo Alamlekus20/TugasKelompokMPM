@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd3rti27t4oo8"]
+
+[ext_resource type="Texture2D" uid="uid://xjn1keginvb3" path="res://world/kado.png" id="1_m6brj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_juxyy"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_m6brj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_juxyy")

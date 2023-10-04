@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bonswkp1p77wd"]
+
+[ext_resource type="Texture2D" uid="uid://cwy4byedvxotu" path="res://world/letter.png" id="1_np14w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2s45"]
+size = Vector2(20.5, 16.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_np14w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.25, 1.25)
+shape = SubResource("RectangleShape2D_b2s45")
