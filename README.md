@@ -6,3 +6,5 @@ Di buat Oleh:
 Alam Ageng Sampurno	          21060120120007
 
 Benardinus Eden Bayu Samurdo	21060120140160
+
+Arya Dimas Taffarel W         21060120130078
